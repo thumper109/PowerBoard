@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<title>A test Document</title>
+<meta http-equiv="refresh" content="5" >
+<html>
+<head>
+	<style>
+	table, th, td {
+	    border: 0px;
+		padding: 0px;
+		border-spacing: 0px;
+	}
+	</style>
+    <body>
+		<table>
+		<tr height="40" >
+		<td>Relay 1</td>
+        <td><form action="http://10.1.1.9:1880/relay1" method="POST">
+            <input type="submit" value="off" name="relay" />
+            <input type="submit" value="on" name="relay" />
+        </form></td>
+	    <td><object width="40" height="40"  type="text/html" data="http://10.1.1.9:1880/status1"></object></td></tr>
+		<tr><td>Relay 2</td>
+        <td><form action="http://10.1.1.9:1880/relay2" method="POST">
+            <input type="submit" value="off" name="relay"/>
+            <input type="submit" value="on" name="relay"/>
+        </form></td>
+		<td><object width="40" height="40"  type="text/html" data="http://10.1.1.9:1880/status2"></object></td></tr>
+		<tr><td>Relay 3</td>
+        <td><form action="http://10.1.1.9:1880/relay3" method="POST">
+            <input type="submit" value="off" name="relay"/>
+            <input type="submit" value="on" name="relay"/>
+        </form></td>
+	    <td><object width="40" height="40"  type="text/html" data="http://10.1.1.9:1880/status3"></object></td></tr>
+		<tr><td>Relay 4</td>
+        <td><form action="http://10.1.1.9:1880/relay4" method="POST">
+            <input type="submit" value="off" name="relay"/>
+            <input type="submit" value="on" name="relay"/>
+        </form></td>	    
+		<td><object width="40" height="40"  type="text/html" data="http://10.1.1.9:1880/status4"></object></td></tr>
+		</table>
+    </body>
+</html>
